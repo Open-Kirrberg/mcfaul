@@ -8,7 +8,7 @@ export default function Footer({ onAnmelden }) {
         <div className="footer-top">
           <div className="footer-brand">
             <div className="brand" style={{ fontSize: '1.7rem' }}>
-              <img className="brand-mark" src="/favicon.svg" alt="" aria-hidden="true" />
+              <img className="brand-mark" src={`${import.meta.env.BASE_URL}favicon.svg`} alt="" aria-hidden="true" />
               <span className="brand-name">
                 mc<b>faul</b>
               </span>

@@ -15,7 +15,7 @@ export default function VideoSection() {
             <span className="live-dot" /> Offizieller Imagefilm
           </span>
           <video
-            src="/mcfaul-video.mp4"
+            src={`${import.meta.env.BASE_URL}mcfaul-video.mp4`}
             controls
             playsInline
             preload="metadata"
@@ -23,7 +23,7 @@ export default function VideoSection() {
           >
             <track
               kind="captions"
-              src="/mcfaul-video.de.vtt"
+              src={`${import.meta.env.BASE_URL}mcfaul-video.de.vtt`}
               srcLang="de"
               label="Deutsch"
               default

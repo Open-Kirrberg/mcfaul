@@ -20,7 +20,7 @@ export default function Nav({ onAnmelden }) {
     <header className={`nav${scrolled ? ' scrolled' : ''}${open ? ' menu-open' : ''}`}>
       <div className="container nav-inner">
         <a href="#top" className="brand" onClick={() => setOpen(false)}>
-          <img className="brand-mark" src="/favicon.svg" alt="" aria-hidden="true" />
+          <img className="brand-mark" src={`${import.meta.env.BASE_URL}favicon.svg`} alt="" aria-hidden="true" />
           <span className="brand-name">
             mc<b>faul</b>
           </span>
